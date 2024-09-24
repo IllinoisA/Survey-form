@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Survey form</title>
+</head>
+<body>
+    <h1 id="title">Practice Survey Form</h1>
+    <p id="description">Thank you for testing the form.</p>
+    <form id="survey-form" method="post" target="_blank">
+        <fieldset>
+            <label for="name">Name<input type="text" id="name" placeholder="Enter your name" required></label>
+            <label for="email">Email<input type="email" id="email" placeholder="Enter your email" required></label>
+            <label for="number">Age (optional)<input type="number" id="number" min="10" max="60" placeholder="Age"></label>
+
+            <label for="dropdown">Which option best describes your current role?
+                <select id="dropdown">
+                <option value="" disabled selected hidden>select current role</option>
+                <option value="student">Student</option>
+                <option value="ftj">Full time job</option>
+                <option value="ftl">Full time learner</option>
+                <option value="pns">Prefer not to say</option>
+                <option value="other">Other</option>
+                </select>
+            </label>
+        </fieldsset>
+
+        <fieldset class="fs">
+            <legend>Rate this form in overall functionality and design (1-5) 1 being the lowest and 5 for highest.</legend>
+            <label for="rate1"><input type="radio" class="inline" id="rate1" name="rate" value="1" checked> 1</label>
+            <label for="rate2"><input type="radio" class="inline" id="rate2" name="rate" value="2"> 2</label>
+            <label for="rate3"><input type="radio" class="inline" id="rate3" name="rate" value="3"> 3</label>
+            <label for="rate4"><input type="radio" class="inline" id="rate4" name="rate" value="4"> 4</label>
+            <label for="rate5"><input type="radio" class="inline" id="rate5" name="rate" value="5"> 5</label>
+        </fieldset>
+
+        <fieldset class="fs">
+            <legend>What would you like to recommend to improve? (Check all that apply)</legend>
+            <label for="recommend1" class="hover"><input type="checkbox" class="inline" id="recommend1" name="recommend" value="clarity"> Clarity of the Questions</label>
+            <label for="recommend2" class="hover"><input type="checkbox" class="inline" id="recommend2" name="recommend" value="ease"> Ease of Navigation</label>
+            <label for="recommend3" class="hover"><input type="checkbox" class="inline" id="recommend3" name="recommend" value="design&layout"> Design and Layout</label>
+            <label for="recommend4" class="hover"><input type="checkbox" class="inline" id="recommend4" name="recommend" value="response"> Response Options</label>
+            <label for="recommend5" class="hover"><input type="checkbox" class="inline" id="recommend5" name="recommend" value="instructions"> Instructions</label>
+            <label for="recommend6" class="hover"><input type="checkbox" class="inline" id="recommend6" name="recommend" value="privacy"> Privacy and Data Security Information</label>
+        </fieldset>
+
+            <label for="comment">Any comments and suggestions?
+            <textarea id="comment" name="comment" rows="4" cols="40" placeholder="Enter your comment here..."></textarea>
+            </label>
+        
+
+        <label for="t-and-c"><input type="checkbox" class="inline" id="t-and-c" name="t-and-c" value="terms and conditions" required> I accept the<a href=""> terms and conditions</a> </label>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
